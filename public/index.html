@@ -1,0 +1,92 @@
+<html>
+ <head>
+  <title>View A Card</title>
+  <link rel="stylesheet" type="text/css" href="http://mserver:8080/index.css">
+  <link rel="shortcut icon" href="http://mserver:8080/assets/icons/flavicon.ico">
+  <script src="http://mserver:8080/libs/jquery-3.0.0.js"></script>
+  <script src="http://mserver:8080/index_click.js"></script>
+ </head>
+ <body>
+	<div id="fullscreenWrapper">
+		<div id="imageWrapper">
+			<img src="" id="fullscreen_image" />
+		</div>
+	</div>
+	<div id="Wrapper">
+		<div id="ViewBox">
+			<img src="" id="image" />
+			<img src="http://mserver:8080/assets/icons/trash.png" class="icon" id="Trashcan" />
+			<img src="http://mserver:8080/assets/icons/fullscreen.png" class="icon" id="Fullscreen" />
+			<img src="http://mserver:8080/assets/icons/print.png" class="icon" id="Print_icon" />
+			<a href="" download><img src="http://mserver:8080/assets/icons/download.png" class="icon" id="Download" /></a>
+		</div>
+		<div id="descriptionBox">
+			<h3> PROPERTIES </h3>
+			<div class="descriptionBox_sub" id="descriptionBox_Flag1">
+				<label class="descriptionBox_label"><input type="checkbox" class="descriptionBox_checkbox" id="descriptionBox_checkbox1"> Gender Neutral</label>
+			</div>
+			<div class="descriptionBox_sub" id="descriptionBox_Flag2">
+				<label class="descriptionBox_label"><input type="checkbox" class="descriptionBox_checkbox" id="descriptionBox_checkbox2"> Boy</label>
+			</div> 
+			<div class="descriptionBox_sub" id="descriptionBox_Flag3">
+				<label class="descriptionBox_label"><input type="checkbox" class="descriptionBox_checkbox" id="descriptionBox_checkbox3"> Girl</label>
+			</div>
+			<div class="descriptionBox_sub" id="descriptionBox_Flag4">
+				<label class="descriptionBox_label"><input type="checkbox" class="descriptionBox_checkbox" id="descriptionBox_checkbox4"> Sports</label>
+			</div> 
+			<div class="descriptionBox_sub" id="descriptionBox_Flag5">
+				<label class="descriptionBox_label"><input type="checkbox" class="descriptionBox_checkbox" id="descriptionBox_checkbox5"> Animals</label>
+			</div>
+			<div class="descriptionBox_sub" id="descriptionBox_Flag6">
+				<label class="descriptionBox_label"><input type="checkbox" class="descriptionBox_checkbox" id="descriptionBox_checkbox6"> Foods</label>
+			</div>
+			<div class="descriptionBox_sub" id="descriptionBox_Flag7">
+				<label class="descriptionBox_label"><input type="checkbox" class="descriptionBox_checkbox" id="descriptionBox_checkbox7"> Hobbies</label>
+			</div>
+			<div class="descriptionBox_sub" id="descriptionBox_Flag8">
+				<label class="descriptionBox_label"><input type="checkbox" class="descriptionBox_checkbox" id="descriptionBox_checkbox8"> Inappropriate</label>
+			</div>
+		</div>
+		<div id="thumbnailWrapper">
+			<div id="thumbnailBox">
+				<!-- table will override this. This is here so if the server is offline, there is message to turn on the server (incase someone goes to page without getting directed from server) -->
+				<div id="warning">
+					<h1> Node Server Offline </h1>
+					<h3> Start the server, and try again! </h3>
+				</div>
+			</div>
+			<div id="thumbnailSort">
+				<div id="sort" class="sortNotHidden">
+					<div id="sortButton">
+						<h3>SORT<h3>
+					</div>
+					<div class="flagButtons">
+						<label class="flag_label"><input type="checkbox" id="Flag1_checkbox"> Gender Neutral</label>
+					</div>
+					<div class="flagButtons">
+						<label class="flag_label"><input type="checkbox" id="Flag2_checkbox"> Boy</label>
+					</div>
+					<div class="flagButtons">
+						<label class="flag_label"><input type="checkbox" id="Flag3_checkbox"> Girl</label>
+					</div>
+					<div class="flagButtons">
+						<label class="flag_label"><input type="checkbox" id="Flag4_checkbox"> Sports</label>
+					</div>
+					<div class="flagButtons">
+						<label class="flag_label"><input type="checkbox" id="Flag5_checkbox"> Animals</label>
+					</div>
+					<div class="flagButtons">
+						<label class="flag_label"><input type="checkbox" id="Flag6_checkbox"> Foods</label>
+					</div>
+					<div class="flagButtons">
+						<label class="flag_label"><input type="checkbox" id="Flag7_checkbox"> Hobbies</label>
+					</div>
+					<div class="flagButtons">
+						<label class="flag_label"><input type="checkbox" id="Flag8_checkbox"> Inappropriate</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>
